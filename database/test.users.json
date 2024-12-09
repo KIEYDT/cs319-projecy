@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6756a8ff796b178da2c109e8"
+  },
+  "name": "Phop Thai",
+  "email": "phop.t@bu.net",
+  "password": "$2a$10$bmPSS7cOViID8CMfTc36yOAUsNs/bErD24L9FeXxWUNB.qrbzQncS",
+  "role": "customer",
+  "createdAt": {
+    "$date": "2024-12-09T08:23:27.919Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:23:27.919Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756d380861acf1d27dc873b"
+  },
+  "name": "oak",
+  "email": "oak@mail.com",
+  "password": "$2a$10$CSYLk7bTlEiW1DCTW/VB9.v/mmpbjkU2XsHJ7nj3Xjo2CIPzWKiqe",
+  "role": "customer",
+  "createdAt": {
+    "$date": "2024-12-09T11:24:48.227Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T11:24:48.227Z"
+  },
+  "__v": 0
+}]

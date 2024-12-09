@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "675594e03eca3a3f467fbb52"
+  },
+  "title": "Osaka",
+  "description": "one of the most attractive place of Japan, Osaks.",
+  "cate": "tour",
+  "price": 100,
+  "location": "Osaka, Japan",
+  "available": true,
+  "createdAt": {
+    "$date": "2024-12-08T12:45:20.240Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-08T12:45:20.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756ce23a871a2ce7b7ed156"
+  },
+  "title": "Bangkok",
+  "description": "cap of Thai",
+  "cate": "tour",
+  "price": 5,
+  "location": "Thailand",
+  "available": true,
+  "createdAt": {
+    "$date": "2024-12-09T11:01:55.398Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T11:01:55.398Z"
+  },
+  "__v": 0
+}]

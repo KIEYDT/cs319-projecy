@@ -1,0 +1,70 @@
+<div class="booking-container">
+  <h2>Booking Page</h2>
+
+  <!-- ฟอร์ม -->
+  <div *ngIf="bookingForm">
+    <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+      <div *ngIf="service">
+        <h2>{{ service.title }}</h2>
+        <p>{{ service.description }}</p>
+        <p>Price: {{ service.price }} $</p>
+        <p>Location: {{ service.location }}</p>
+      </div>
+      
+      <div>
+        <label for="name">Full Name:</label>
+        <input
+          id="name" type="text" formControlName="name" [disabled]="true" />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div>
+        <label for="bookingDate">Tour Date:</label>
+        <input id="bookingDate" type="date" formControlName="bookingDate" />
+      </div>
+
+      <div>
+        <label for="total">Number of People:</label>
+        <input id="total" type="number" formControlName="total" min="1" />
+      </div>
+
+      <div>
+        <label for="info">Additional Information:</label>
+        <textarea
+          id="info"
+          formControlName="info"
+          placeholder="Any additional requests?"
+        ></textarea>
+      </div>
+
+      <button type="submit" [disabled]="bookingForm.invalid">
+        Confirm Booking
+      </button>
+    </form>
+  </div>
+
+  <!-- ลิสต์การจอง -->
+  <h3>Booking List</h3>
+  <div *ngIf="bookings.length === 0">No bookings yet.</div>
+  <ul>
+    <li *ngFor="let booking of bookings">
+      <strong>Name:</strong> {{ booking.name }} <br />
+      <strong>Email:</strong> {{ booking.email }} <br />
+      <strong>Date:</strong> {{ booking.tourDate }} <br />
+      <strong>People:</strong> {{ booking.numberOfPeople }} <br />
+      <strong>Message:</strong>
+      {{ booking.message || "No additional information" }}
+    </li>
+  </ul>
+
+  <button class="back-to-menu-btn" (click)="goToMenu()">Back to Menu</button>
+</div>

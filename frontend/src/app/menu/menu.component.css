@@ -1,0 +1,125 @@
+.menu-container {
+  position: relative; /* ตั้งค่าพื้นที่ให้มีการคำนวณตำแหน่งได้ */
+  padding: 20px;
+  height: 100vh; /* ทำให้ container มีความสูงเต็มหน้าจอ */
+}
+
+
+.search-bar {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.go-to-login-btn {
+  position: absolute;
+  top: 20px; /* ระยะห่างจากด้านบน */
+  right: 20px; /* ระยะห่างจากด้านขวา */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-to-login-btn:hover {
+  background-color: #0056b3;
+}
+
+.menu-container {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+:host {
+  display: block;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/2404843/pexels-photo-2404843.jpeg?cs=srgb&dl=pexels-fsoerensen-2404843.jpg&fm=jpg'); /* ชี้ไปที่ภาพในโฟลเดอร์ assets */
+  background-size: cover; /* ปรับภาพให้เต็มพื้นที่ */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+  background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+}
+
+.menu-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.booking-image {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* ทำให้การขยายรูปเป็นไปอย่างนุ่มนวล */
+  cursor: pointer;
+}
+
+.booking-image:hover {
+  transform: scale(1.2); /* ขยายรูปเมื่อชี้เมาส์ */
+}
+
+.image-text-japan {
+  margin-top: 10px;  /* เพิ่มระยะห่างจากรูป */
+  font-size: 18px;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+
+.go-history {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.go-history:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}

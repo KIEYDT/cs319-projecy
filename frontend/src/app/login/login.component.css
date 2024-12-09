@@ -1,0 +1,47 @@
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  
+  border-radius: 8px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+:host {
+  display: block;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/2404843/pexels-photo-2404843.jpeg?cs=srgb&dl=pexels-fsoerensen-2404843.jpg&fm=jpg'); /* ชี้ไปที่ภาพในโฟลเดอร์ assets */
+  background-size: cover; /* ปรับภาพให้เต็มพื้นที่ */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+  background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+}

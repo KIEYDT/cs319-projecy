@@ -1,0 +1,60 @@
+
+:host {
+    display: block;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/2404843/pexels-photo-2404843.jpeg?cs=srgb&dl=pexels-fsoerensen-2404843.jpg&fm=jpg'); /* ชี้ไปที่ภาพในโฟลเดอร์ assets */
+    background-size: cover; /* ปรับภาพให้เต็มพื้นที่ */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+  }
+
+
+.back-to-menu-btn {
+    position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .back-to-menu-btn:hover {
+    background-color: #218838;
+  }
+
+
+  .history-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  .history-table th,
+  .history-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .history-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .no-history-message {
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+  }
+  

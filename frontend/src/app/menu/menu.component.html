@@ -1,0 +1,29 @@
+<div class="menu-container">
+  <h2>Welcome to Booking Tour :3</h2>
+  <div class="search-bar">
+    <input 
+      type="text" 
+      placeholder="Search for a destination..." 
+      class="search-input"
+    />
+    <button class="search-button">Search</button>
+  </div>
+  <ul>
+    <li *ngFor="let service of services">
+      <img
+        src="https://media.glamourmagazine.co.uk/photos/661a8453f4e563f871106fbe/1:1/w_1280,h_1280,c_limit/JAPANESE%20CITIES%20130424%20GETTYIMAGES-512491222_L.jpg"
+        alt="Booking Image"
+        class="booking-image"
+        (click)="goToBooking(service._id)"
+      />
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+      <p>Price: {{ service.price }} $</p>
+      <p>Location: {{ service.location }}</p>
+    </li>
+  </ul>
+
+  <button class="go-to-login-btn" (click)="goToLogin()">Log out</button>
+
+  <button class="go-history" (click)="goToHistory()">History</button>
+</div>

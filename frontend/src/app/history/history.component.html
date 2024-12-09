@@ -1,0 +1,20 @@
+<div class="history-container">
+  <h2>Booking History</h2>
+  <div>
+    <h2>Your Bookings</h2>
+    <ul>
+      <li *ngFor="let booking of bookings">
+        <h3>Service: {{ booking.serviceId.title }}</h3>
+        <p>Date: {{ booking.bookingDate | date }}</p>
+        <p>Total: {{ booking.total }}</p>
+        <p>Additional Info: {{ booking.info }}</p>
+      </li>
+    </ul>
+  </div>
+
+  <p *ngIf="bookings.length === 0" class="no-history-message">
+    No booking history available at the moment.
+  </p>
+
+  <button class="back-to-menu-btn" (click)="goToMenu()">Return to menu</button>
+</div>

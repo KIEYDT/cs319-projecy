@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "6756fb64eddfb0a6b6378643"
+  },
+  "userId": {
+    "$oid": "6756a8ff796b178da2c109e8"
+  },
+  "serviceId": {
+    "$oid": "675594e03eca3a3f467fbb52"
+  },
+  "bookingDate": {
+    "$date": "2024-12-09T00:00:00.000Z"
+  },
+  "total": 2,
+  "info": "asd",
+  "status": "pending",
+  "payment": "pending",
+  "createdAt": {
+    "$date": "2024-12-09T14:15:00.028Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T14:15:00.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675700d547aa36e13ff123a2"
+  },
+  "userId": {
+    "$oid": "6756a8ff796b178da2c109e8"
+  },
+  "serviceId": {
+    "$oid": "6756ce23a871a2ce7b7ed156"
+  },
+  "bookingDate": {
+    "$date": "2024-12-14T00:00:00.000Z"
+  },
+  "total": 8,
+  "info": "i eat",
+  "status": "pending",
+  "payment": "pending",
+  "createdAt": {
+    "$date": "2024-12-09T14:38:13.565Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T14:38:13.565Z"
+  },
+  "__v": 0
+}]
